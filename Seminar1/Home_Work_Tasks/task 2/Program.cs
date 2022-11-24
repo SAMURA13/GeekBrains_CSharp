@@ -3,11 +3,12 @@
 // a = 2 b = 10 -> max = 10, min = 2
 // a = -9 b = -3 -> max = -3, min = -9
 
- Console.WriteLine("Введите число 1 : ");
+Console.WriteLine("Введите число 1 : ");
  int number = Convert.ToInt32(Console.ReadLine());
 
-  Console.WriteLine("Введите число 2 : ");
+Console.WriteLine("Введите число 2 : ");
  int number2 = Convert.ToInt32(Console.ReadLine());
+ 
 if (number == number2)
  {
     Console.WriteLine("Они равны");
