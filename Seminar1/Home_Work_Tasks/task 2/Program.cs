@@ -10,9 +10,10 @@
  int number2 = Convert.ToInt32(Console.ReadLine());
 if (number == number2)
  {
-    break;
     Console.WriteLine("Они равны");
  }
+ else
+ {
  if (number > number2)
  {
     Console.WriteLine("Первое число больше");
@@ -20,4 +21,5 @@ if (number == number2)
  else
  {
     Console.WriteLine("Второе число больше");
+ }
  }
