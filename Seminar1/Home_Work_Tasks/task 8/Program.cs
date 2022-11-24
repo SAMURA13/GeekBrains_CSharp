@@ -3,3 +3,9 @@
 // 8 -> 2, 4, 6, 8
  Console.WriteLine("Введите число : ");
  int number = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i < number;)
+{
+    i = i + 2;
+    Console.Write($" {i} ");
+}
+
