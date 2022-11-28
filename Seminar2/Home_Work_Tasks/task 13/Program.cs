@@ -12,7 +12,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 int rez= 0;
  if (number<=99)
  {
-    Console.WriteLine("3 net");
+    Console.WriteLine("No third digit");
  }
  if (number>99 && number<1000)
  {
