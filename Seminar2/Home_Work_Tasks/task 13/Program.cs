@@ -6,3 +6,26 @@
 // 78 -> третьей цифры нет
 // ​
 // 32679 -> 6
+
+Console.WriteLine("Enter a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int rez= 0;
+ if (number<=99)
+ {
+    Console.WriteLine("3 net");
+ }
+ if (number>99 && number<1000)
+ {
+   rez=number%10;
+ }
+ if (number>999)
+{
+  while (number>999)
+    {
+        number=number/10;
+    }
+    rez=number%10;
+}
+Console.WriteLine(rez);
+
+ 
