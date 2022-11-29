@@ -7,17 +7,21 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 if (x>0 && y>0)
 {
-    Console.WriteLine("1");
+    Console.WriteLine("Первая четверть");
 }
 else if (x<0 && y>0)
 {
-    Console.WriteLine("2");
+    Console.WriteLine("Вторая четверть");
 }
 else if (x<0 && y<0)
 {
-    Console.WriteLine("3");
+    Console.WriteLine("Третья четверть");
 }
 else if (x>0 && y<0)
 {
-    Console.WriteLine("4");
+    Console.WriteLine("Четвертая четверть");
+}
+else
+{
+    Console.WriteLine("невозможно найти кординату");
 }
