@@ -9,3 +9,26 @@
 Console.WriteLine("Введите : ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number/10000 == number%10 && (number/1000)%10 == (number%100)/10)
+{
+    Console.WriteLine("Да, число является палиндромом");
+}
+else if (number/1000 == number%10 && (number/100)%10 == (number%100)/10)
+{
+    Console.WriteLine("Да, число является палиндромом");
+}
+else if (number/100 == number%10)
+{
+    Console.WriteLine("Да, число является палиндромом");
+}
+else if (number/10 == number%10)
+{
+    Console.WriteLine("Да, число является палиндромом");
+}
+else
+{
+    Console.WriteLine("Нет, это число не палиндром!");
+}
+
+
+
