@@ -5,3 +5,7 @@
 // 12821 -> да
 
 // 23432 -> да
+
+Console.WriteLine("Введите : ");
+int number = Convert.ToInt32(Console.ReadLine());
+

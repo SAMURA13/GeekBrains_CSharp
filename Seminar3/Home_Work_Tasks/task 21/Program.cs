@@ -18,9 +18,7 @@ Console.WriteLine("Введите кординату zb: ");
 int zb = Convert.ToInt32(Console.ReadLine());
 
 
-double ab = Math.Sqrt(Math.Pow(xb-xa, 2)+ 
-Math.Pow(yb-ya, 2)+ 
-Math.Pow(zb-za, 2));
+double ab = Math.Sqrt(Math.Pow(xb-xa, 2)+ Math.Pow(yb-ya, 2)+ Math.Pow(zb-za, 2));
 Console.WriteLine(ab);
 
 // d = √(xb - xa)2 + (yb - ya)2 + (zb - za)2 =
