@@ -13,7 +13,8 @@ int result = 0;
 
 int number1=number; // запоминает число, иначе цикл его затирает
 
-while (number > 0) {
+while (number > 0) 
+{
     result *= 10;
     result += number % 10;
     number /= 10;
