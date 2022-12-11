@@ -3,7 +3,7 @@
 // [3 7 22 2 78] -> 76
 
 const int SIZE =6;
-const int LEFTRANGE=1;
+const int LEFTRANGE=-10;
 const int RIGTHRANGE=100;
 int[] GetRandomArray(int size, int leftRange, int rigthRange)
 {
