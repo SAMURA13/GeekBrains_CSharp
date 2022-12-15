@@ -4,9 +4,9 @@
   string stop = "stop";
     string answer= Console.ReadLine();
     int count=0;
-    for (int i = 0;answer != stop; i++)
+    for (answer != stop;)
     {
-
+        int i = 0;
         if(i > 0)
         {
         count++;
@@ -14,7 +14,7 @@
         Console.Write($"Vvedite :  ");
         answer=i.ToString(Console.ReadLine());      
     }
-    Console.Write($"Вы ввели четных чисел {count-1}");
+    Console.Write($"Вы ввели четных чисел {count}");
 
 
 
