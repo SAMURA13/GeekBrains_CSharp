@@ -8,7 +8,7 @@ string stop = "stop";
     {
     
     Console.Write($"Vvedite :  ");
-    answer= Console.ReadLine(); 
+   
     if (answer==stop)
     {
         break;
