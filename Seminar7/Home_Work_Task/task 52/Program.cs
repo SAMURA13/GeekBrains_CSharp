@@ -32,14 +32,14 @@ Console.WriteLine();
 
 double[] b=new double[5];
 
-for (int i=0,k=0;i<m;i++) 
+for (int i=0,k=0;i<n;i++) 
 {
     double summa=0;
     for (int j=0;j<n;j++) 
         {
-            summa+=a[i,j];
+            summa+=a[j,i];
         }
-    b[k]=summa/m;
+    b[k]=summa/n;
     Console.WriteLine("Среднее арифметическое столбца "+(i+1)+" равно: "+b[k]);
     k++;
 }          
