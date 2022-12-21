@@ -41,22 +41,21 @@ int[,] matrix = GetMatrix(rows, columns);
 PrintMatrix(matrix);
 Console.WriteLine();
 
-int Smena(int[,] matr)
+void Smena(int[,] matr)
 {
     
-    int temp=0;
+   
      for(int i = 0; i < matr.GetLength(0); i++)
     {
-        for(int j = 0; j < matr.GetLength(1); j++)
-        {
-            temp=matr[i,j]-1;
-            matr[i,j]=matr[i,j]-1;
-            temp=matr[i,j];
-            Console.Write(matr[i, j] + " ");
-        }
-        Console.WriteLine();
+       
+        int temp=matr[0,i];
+        matr[0,i]=matr[matr.GetLength(0)-1,i];
+        matr[matr.GetLength(0)-1,i]=temp;
+        
+        
     }
-    return matr[1,1];
+    
 }
 
 Smena(matrix);
+PrintMatrix(matrix);

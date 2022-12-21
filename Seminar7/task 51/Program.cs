@@ -7,3 +7,52 @@
 // ​
 // Доп. условие для 51 задачи: сделать суммирование в один цикл. Матрица может быть прямоугольный
 
+int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange=0, int rightRange=50)
+{
+    int[,] matr = new int[rowsCount, columnsCount];
+    Random rand = new Random();
+
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            matr[i, j] = rand.Next(leftRange, rightRange + 1);
+        }
+    }
+
+    return matr;
+}
+
+void PrintMatrix(int[,] matr)
+{
+    for(int i = 0; i < matr.GetLength(0); i++)
+    {
+        for(int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write(matr[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int Task(int[,] matr)
+{
+    int sum =0;
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            if(i==j)
+            {
+                sum += matr[i, j];
+            }
+        }
+    }
+    return sum;
+}
+
+int[,] matr = GetMatrix(4, 4, 3, 9);
+PrintMatrix(matr);
+int sum = Task(matr);
+Console.WriteLine();
+Console.WriteLine(sum);
